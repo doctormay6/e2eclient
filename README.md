@@ -1,6 +1,6 @@
 # E3 Protocol (End-to-End Encryption)
 
-A Python library that implements a basic end-to-end encryption protocol in which messages are sent between two clients. The server connecting the clients has no visibility into the conversation, and only exists to bridge two clients that use the same connection key.
+A basic end-to-end encryption protocol implemented in Python in which messages are sent between two clients. The server connecting the clients has no visibility into the conversation, and only exists to bridge two clients that use the same connection key.
 
 ## Features:
 
