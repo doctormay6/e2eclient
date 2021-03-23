@@ -28,7 +28,7 @@ class e3client:
 
     def send(self, message):
         # encrypt and send size to target
-        size = f"{len(message):064b}".encode()
+        size = f"{len(message.encode()):064b}".encode()
         cipher = AES.new(self.cipherKey, AES.MODE_EAX)
         cipher.update(self.header)
         ciphertext, tag = cipher.encrypt_and_digest(size)
